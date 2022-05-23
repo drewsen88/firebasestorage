@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>607708005049-1ctj2q6c5g3ep8k08fp4b3so44bnk8vf.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.607708005049-1ctj2q6c5g3ep8k08fp4b3so44bnk8vf</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDdHHkQKyr0ltQ5tNXN_SzHzoT3HzK6UH4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>607708005049</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.bookatrip.myvidstash</string>
+	<key>PROJECT_ID</key>
+	<string>myvidstash</string>
+	<key>STORAGE_BUCKET</key>
+	<string>myvidstash.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:607708005049:ios:18e32ef4787ec1c4951168</string>
+</dict>
+</plist>

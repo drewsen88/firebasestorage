@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="firestorage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhC-vA-RQS">
+                                <rect key="frame" x="151" y="631" width="113.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Upload Image"/>
+                                <connections>
+                                    <action selector="uploadImageTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ox6-3n-IVf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TdV-Hr-OAI">
+                                <rect key="frame" x="145" y="580" width="91" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Pull Image"/>
+                                <connections>
+                                    <action selector="pullImageTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VPZ-1r-8zu"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ui8-Je-5kb">
+                                <rect key="frame" x="82" y="84" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="8Cs-MW-w8y"/>
+                                    <constraint firstAttribute="height" constant="250" id="Ox7-sU-zK4"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="end-at-DPB" userLabel="Clear Cache">
+                                <rect key="frame" x="149" y="541" width="103" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="aTm-VS-fen"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Clear Cache"/>
+                                <connections>
+                                    <action selector="clearCacheWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tJX-V2-Vub"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="svv-gI-47P">
+                                <rect key="frame" x="132" y="497" width="117" height="4"/>
+                            </progressView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3el-fs-qAs">
+                                <rect key="frame" x="82" y="334" width="240" height="163"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nSM-EM-S0n">
+                                <rect key="frame" x="182" y="711" width="51" height="36"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Play"/>
+                                <connections>
+                                    <action selector="pullVidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sB2-BY-ABS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ui8-Je-5kb" secondAttribute="trailing" constant="82" id="708-KA-obs"/>
+                            <constraint firstItem="nSM-EM-S0n" firstAttribute="centerX" secondItem="nhC-vA-RQS" secondAttribute="centerX" id="AW7-nH-fdu"/>
+                            <constraint firstItem="svv-gI-47P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="C6b-pa-Lad"/>
+                            <constraint firstItem="end-at-DPB" firstAttribute="top" secondItem="svv-gI-47P" secondAttribute="bottom" constant="40" id="Dii-oC-tfe"/>
+                            <constraint firstItem="nSM-EM-S0n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="182" id="Inx-Qe-v65"/>
+                            <constraint firstItem="3el-fs-qAs" firstAttribute="top" secondItem="Ui8-Je-5kb" secondAttribute="bottom" id="MbG-ow-vJb"/>
+                            <constraint firstItem="end-at-DPB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="149" id="Og0-Ge-atQ"/>
+                            <constraint firstItem="nhC-vA-RQS" firstAttribute="top" secondItem="TdV-Hr-OAI" secondAttribute="bottom" constant="20" id="TCj-Pp-Nak"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nhC-vA-RQS" secondAttribute="bottom" constant="200" id="VoA-RY-lGx"/>
+                            <constraint firstItem="Ui8-Je-5kb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="Vwt-lH-uXJ"/>
+                            <constraint firstItem="svv-gI-47P" firstAttribute="centerX" secondItem="TdV-Hr-OAI" secondAttribute="centerX" id="Wgq-pW-dkK"/>
+                            <constraint firstItem="3el-fs-qAs" firstAttribute="leading" secondItem="Ui8-Je-5kb" secondAttribute="leading" id="aDc-JI-P4Y"/>
+                            <constraint firstItem="end-at-DPB" firstAttribute="centerX" secondItem="TdV-Hr-OAI" secondAttribute="centerX" constant="10" id="dRS-QU-whh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3el-fs-qAs" secondAttribute="trailing" constant="92" id="eaA-5b-W5e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nSM-EM-S0n" secondAttribute="bottom" constant="115" id="ggj-ds-agd"/>
+                            <constraint firstItem="Ui8-Je-5kb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nCI-6y-eCb"/>
+                            <constraint firstItem="svv-gI-47P" firstAttribute="top" secondItem="3el-fs-qAs" secondAttribute="bottom" id="okg-Qc-P8C"/>
+                            <constraint firstItem="Ui8-Je-5kb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="82" id="owS-Uy-0bM"/>
+                            <constraint firstItem="nSM-EM-S0n" firstAttribute="top" secondItem="nhC-vA-RQS" secondAttribute="bottom" constant="49" id="saP-KN-DkN"/>
+                            <constraint firstItem="TdV-Hr-OAI" firstAttribute="top" secondItem="end-at-DPB" secondAttribute="bottom" constant="8" symbolic="YES" id="zHE-yA-zsr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageDownloaded" destination="Ui8-Je-5kb" id="eOd-tG-LEE"/>
+                        <outlet property="playerView" destination="3el-fs-qAs" id="6lG-LB-V3c"/>
+                        <outlet property="progressBar" destination="svv-gI-47P" id="K4h-rQ-tmX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="41.517857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
